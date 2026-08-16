@@ -26,13 +26,6 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# PyInstaller (launcher exe)
-*.manifest
-*.spec
-launcher/build/
-launcher/dist/
-launcher/*.spec
-
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
@@ -132,7 +125,8 @@ tempCodeRunnerFile.py
 .pypirc
 
 # ---- 本机绝对路径 / 运行生成物（隐私） ----
-launcher/launcher_config.json
+desktop-app/
+0/
 pet/pet_settings.json
 pet/call_signal.txt
 *.bak
