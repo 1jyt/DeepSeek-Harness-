@@ -1,0 +1,9 @@
+{
+  "name": "ollama-lifecycle",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Start the local Ollama vision service together with DSH and stop it when DSH exits.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT"
+}

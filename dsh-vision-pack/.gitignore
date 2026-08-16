@@ -1,0 +1,29 @@
+# Dependencies & build
+node_modules/
+.pnpm-store/
+pnpm-lock.yaml
+
+# Ollama model files (huge, never commit)
+ollama/models/
+models/
+*.gguf
+
+# DSH runtime / personal data
+sessions/
+attachments/
+*.log
+dsh.out.log
+dsh.err.log
+*.jsonl
+*.zstd
+
+# OS & editor
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+.DS_Store
+
+# Local env / secrets
+settings.yaml
+.env

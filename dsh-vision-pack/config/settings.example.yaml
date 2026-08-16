@@ -1,0 +1,17 @@
+# 合并到 <DSH_HOME>/settings.yaml 的 llm-pi-ai.providers 下
+# 作用：让 DSH 模型选择器里出现 "Ollama 本地视觉模型" 分组（可选，不影响 vision-bridge）
+llm-pi-ai:
+  providers:
+    ollama:
+      displayName: Ollama 本地视觉模型
+      api: openai-completions
+      baseURL: http://127.0.0.1:11434/v1
+      defaultInput: [text, image]
+      headers:
+        Authorization: Bearer ollama
+      models:
+        - id: qwen2.5vl:7b
+          name: Qwen2.5-VL 7B（视觉）
+          contextWindow: 32768
+          maxTokens: 4096
+          input: [text, image]

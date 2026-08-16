@@ -1,0 +1,19 @@
+# DSH profile patch layer — 合并进 <DSH_HOME>/profiles/web/cordis.patch.yml
+# workspaceRoot 替换成你自己的工作目录（图片文件相对路径的解析根）
+
+# tool-analyze-image: vision-bridge（拦截 llm/stream 图片）+ analyze_image 工具
+- insert:
+    - id: tool-analyze-image
+      name: 'tool-analyze-image'
+      config:
+        workspaceRoot: 'D:\your\workspace'
+
+# ollama-lifecycle: Ollama 跟随 DSH 一起启动/关闭
+# ollamaPath 可省略：插件会自动探测常见安装位置（D:\Ollama、%LOCALAPPDATA%\Programs\Ollama、PATH）
+- insert:
+    - id: ollama-lifecycle
+      name: 'ollama-lifecycle'
+      config:
+        baseUrl: 'http://127.0.0.1:11434'
+        readyTimeoutMs: 20000
+        killOnExit: true

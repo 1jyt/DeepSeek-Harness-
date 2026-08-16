@@ -1,0 +1,9 @@
+{
+  "name": "tool-analyze-image",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DSH tool: analyze an image file with the local Ollama vision model and return its description as text.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT"
+}
